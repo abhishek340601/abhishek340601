@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: "Times New Roman";
+    background-image: url(s.jpg);
+    background-position: center;
+    background-size: cover no-repeat;
+    height: 100vh;
+    min-height: 100px;
+
+
+}
+.menu{
+    background:#000;
+    text-align: left;
+
+}
+ul{
+    display: inline-flex;
+    list-style: none;
+}
+ul li{
+    width: 120px;
+    margin: 2px;
+    padding: 8px;
+    margin-left: 30px;
+
+}
+ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: orangered;
+    padding: 11px 13px;
+    transition: 0.5s ease;
+    font-weight: 700;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+    border-radius: 2px;
+
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+    border-radius: 2px;
+
+}
+.car-ddmenu{
+    display: none;
+    top: 5.8%;
+    position: relative;
+}
+.car-ddmenu ul{
+    position: absolute;
+}
+.menu ul li:hover .car-ddmenu {
+display: block;
+position: absolute;
+background: #000;
+margin-top: 17px;
+margin-left: -80px;     
+}
+.menu ul li:hover .car-ddmenu ul{
+    display: block;
+    margin: 5px;
+}
+
+.menu ul li:hover .car-ddmenu ul li{
+    width: 110px;
+    padding: 12px;
+    border-bottom: 1px #fff ; 
+    background: #000;
+    transition: 0.4s ease;
+    text-align: left;
+    border-radius: 0;
+
+}
+.lamb{
+    display: none;
+    top: 35%;
+    position: relative;
+}
+.lamb ul{
+    position: absolute;
+}
+
+.menu ul li:hover .car-ddmenu ul li:hover .lamb{
+    display: block;
+    position: absolute;
+    background-color: #000;
+    margin-top: 38px;
+    margin-left: 50px;
+
+}
+.menu ul li:hover .car-ddmenu ul li:hover .lamb ul{
+     display: block;
+     margin: 5px;
+}
+.menu ul li:hover .car-ddmenu ul li:hover .lamb ul li{
+    width: 110px;
+    padding: 12px;
+    background: #000;
+    text-align: left;
+    border-radius: 2px;
+}
+
+
+
+
+.bike-ddmenu{
+    display: none;
+    top: 5.8%;
+    position: relative;
+}
+.bike-ddmenu ul{
+    position: absolute;
+}
+.menu ul li:hover .bike-ddmenu {
+display: block;
+position: absolute;
+background: #000;
+margin-top: 17px;
+margin-left: -80px;     
+}
+.menu ul li:hover .bike-ddmenu ul{
+    display: block;
+    margin: 5px;
+}
+
+.menu ul li:hover .bike-ddmenu ul li{
+    width: 110px;
+    padding: 12px;
+    border-bottom: 1px #fff; 
+    background: #000;
+    transition: 0.4s ease;
+    text-align: left;
+    border-radius: 0;
+
+}
+
+
+
