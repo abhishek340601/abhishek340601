@@ -1,143 +1,123 @@
-body{
+*{
     margin: 0;
     padding: 0;
-    font-size: "Times New Roman";
-    background-image: url(s.jpg);
-    background-position: center;
-    background-size: cover no-repeat;
-    height: 100vh;
-    min-height: 100px;
+    box-sizing: boder-box;
+}
+header{
+    width: 100%; height: 100vh;
+    background-image: url(tajmahal.jpg);
+    background-repeat: no repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%; height: 15vh; 
+    background-color: rgba(0,0,0,0.2);
+    display: flex; justify-content: space-between;
+    align-items: center; text-transform: uppercase;
+
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+    background: red;
+}
+nav .menu{
+    width: 40%; 
+    background-color: coral;
+    display: flex; 
+    justify-content: space-around;
+}
+nav .menu a{
+    width: 25%;
+    text-decoration:none;
+    font-size: bold;
+}
+
+nav .menu a:first-child{
+        color:  #00b894;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
 
 
 }
-.menu{
-    background:#000;
-    text-align: left;
+
+section h3 {
+font-size: 35px;
+font-weight: 200;
+letter-spacing: 3px;
+text-shadow: 1px 1px 2px ;
 
 }
-ul{
-    display: inline-flex;
-    list-style: none;
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 300;
+    text-shadow: 2px 1px 5px red;
+    text-transform: uppercase;
 }
-ul li{
-    width: 120px;
-    margin: 2px;
-    padding: 8px;
-    margin-left: 30px;
+span{
+    margin: auto;
+}
+section p{
+    width: 200px;
+    height: 100px;
+    text-align:  center;
+    font-size: 25px;
+    word-spacing: 4px;
+    margin:botton 25px;
+    text-shadow: 1px 1px 1px red;
 
 }
-ul li a{
-    text-decoration: none;
-    font-size: 17px;
-    color: orangered;
-    padding: 11px 13px;
-    transition: 0.5s ease;
-    font-weight: 700;
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform:uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration:none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+    
 }
-ul li a:hover{
-    background-color: #fff;
+section .btnone{
+    /* background: #00b894; */
+    background: #fff;
     color: #000;
-    border-radius: 2px;
+}
+.btnone:hover{
+    background: #00b894;
+    color: white;
+    
+}
+section .btntwo{
+        background: #00b894;
+        color: white;
 
 }
-ul li.active a{
-    background-color: #fff;
+.btntwo:hover{
+    background: #fff;
     color: #000;
-    border-radius: 2px;
-
+   
 }
-.car-ddmenu{
-    display: none;
-    top: 5.8%;
-    position: relative;
+.change-content:after{
+    content:auto;
+    animation: changetext 10s infinite linear;
+    color:  #00b894;
 }
-.car-ddmenu ul{
-    position: absolute;
-}
-.menu ul li:hover .car-ddmenu {
-display: block;
-position: absolute;
-background: #000;
-margin-top: 17px;
-margin-left: -80px;     
-}
-.menu ul li:hover .car-ddmenu ul{
-    display: block;
-    margin: 5px;
-}
-
-.menu ul li:hover .car-ddmenu ul li{
-    width: 110px;
-    padding: 12px;
-    border-bottom: 1px #fff ; 
-    background: #000;
-    transition: 0.4s ease;
-    text-align: left;
-    border-radius: 0;
-
-}
-.lamb{
-    display: none;
-    top: 35%;
-    position: relative;
-}
-.lamb ul{
-    position: absolute;
-}
-
-.menu ul li:hover .car-ddmenu ul li:hover .lamb{
-    display: block;
-    position: absolute;
-    background-color: #000;
-    margin-top: 38px;
-    margin-left: 50px;
-
-}
-.menu ul li:hover .car-ddmenu ul li:hover .lamb ul{
-     display: block;
-     margin: 5px;
-}
-.menu ul li:hover .car-ddmenu ul li:hover .lamb ul li{
-    width: 110px;
-    padding: 12px;
-    background: #000;
-    text-align: left;
-    border-radius: 2px;
-}
-
-
-
-
-.bike-ddmenu{
-    display: none;
-    top: 5.8%;
-    position: relative;
-}
-.bike-ddmenu ul{
-    position: absolute;
-}
-.menu ul li:hover .bike-ddmenu {
-display: block;
-position: absolute;
-background: #000;
-margin-top: 17px;
-margin-left: -80px;     
-}
-.menu ul li:hover .bike-ddmenu ul{
-    display: block;
-    margin: 5px;
-}
-
-.menu ul li:hover .bike-ddmenu ul li{
-    width: 110px;
-    padding: 12px;
-    border-bottom: 1px #fff; 
-    background: #000;
-    transition: 0.4s ease;
-    text-align: left;
-    border-radius: 0;
-
-}
-
-
+    @keyframes chagetext{
+      0%{content: "Darjeeling";}
+        20%{content: "agra";}
+        35%{content: "jaipur";}
+      60%{content: "kerla";}
+      80%{content: "delhi";}
+        100%{content: "mumbai";}
+      }
 
